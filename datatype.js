@@ -4,4 +4,6 @@
 
 console.log(8 + 28)
 
- 
+let name = "Prathmesh N S"
+
+console.log(typeof name);
