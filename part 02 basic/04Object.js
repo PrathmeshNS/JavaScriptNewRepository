@@ -56,20 +56,28 @@ usr = [
     }
 ]
 
-console.log(usr[1].email)
-console.log(tinderuser);
+// console.log(usr[1].email)
+// console.log(tinderuser);
 
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
 
 
-console.log(tinderuser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderuser.hasOwnProperty('isLoggedIn'));
+
+const course = {
+    courseName : "Java Spring",
+    price : 455,
+    courseInstructor : "prathmesh"
+}
 
 
+// const {courseInstructor} = course
+// console.log(courseInstructor);
 
-
-
+const {courseInstructor:instructor} = course //destructuring on the object
+console.log(instructor);
 
 
