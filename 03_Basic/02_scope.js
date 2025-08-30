@@ -17,5 +17,23 @@ function one() {
 }
 
 
+//++++++++++++++++ Interesting +++++++++++++++++
+
+function addOne(num) {
+    return num + 1
+}
+
+addOne(5)
+
+
+addTwo(5) //when we declere the function with assignable value is not allowed you called it before the declearation. it also called as hosting
+
+const addTwo = function(num) {
+    return num + 2
+}
+
+
+
+
 
 
