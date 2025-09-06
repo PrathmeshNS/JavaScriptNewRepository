@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Nodes</title>
+</head>
+<body style="background-color: black;color: wheat;">
+    
+
+</body>
+
+<script>
+   const div =  document.createElement("div");
+   div.className = "main"
+   div.id = Math.round(Math.random() *10 +1)
+   div.setAttribute("title", "Coding.. Coding.. Coding..")
+   div.style.backgroundColor = 'blue'
+   div.style.padding = "12px"
+//    div.innerHTML = "Coding!/! Coding!! Coding!!"
+    const addText = document.createTextNode("Coding... Coding... Coding...")
+    div.appendChild(addText)
+
+    for (let i = 0; i < 5; i++) {
+        document.body.appendChild(div)
+    }
+
+   console.log(div);
+
+</script>
+</html>
