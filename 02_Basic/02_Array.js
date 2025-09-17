@@ -9,8 +9,10 @@ const dc = ["superman", "flash", "batman"]
 //  const allHero= marvelHeros.concat(dc)
 // console.log(allHero); 
 
-// const all_new =[...marvelHeros, ...dc]
-// console.log(all_new);
+const all_new =[...marvelHeros, ...dc]
+console.log(all_new.forEach( (e)=>{
+    console.log(e)
+}));
 
 
 // const anht=[1,15,9,1,[4,63,4,62],65,54,6,[6,62,[4,56,3,7,63],32,5]]
