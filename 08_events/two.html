@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEA</title>
+</head>
+<body>
+    <h1>Code With PS</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+        const sayPs = ()=>{console.log("Hello PS")}
+
+        const changeText = ()=>{
+            document.querySelector("h1").innerHTML = 
+            "Hope Your Doing Well"
+        }
+
+        const changeMe = setTimeout(changeText, 2500);
+
+
+        document.querySelector("#stop").addEventListener("click",()=>{
+            clearTimeout(changeMe)
+        })
+
+    </script>
+</body>
+</html>

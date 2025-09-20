@@ -54,7 +54,7 @@
             >Google</a
           >
         </li>
-      </ul>
+      </ul> 
     </div>
   </body>
 
@@ -65,18 +65,26 @@
 
     //attachEvent() , jQuery = on
 
-    document.getElementById('images').addEventListener("click", (e)=>{
-      console.log("clicked inside the ul")
-    },false) 
+    // document.getElementById('images').addEventListener("click", (e)=>{
+    //   console.log("clicked inside the ul")
+    // },false) 
 
-    document.getElementById('owl').addEventListener("click", (e)=>{
-      console.log("owl owl")
-    },false) 
+    // document.getElementById('owl').addEventListener("click", (e)=>{
+    //   console.log("owl owl")
+    // },false) 
 
     //types, timestamp, defulatPrevented, target, toElement, currentTarget, 
     //clientX,Y ctrlkey, shiftkey
     //event propagate = event bumbling and event capturing.
 
+    document.querySelector("#images").addEventListener("click",(e)=>{
+      console.log(e.target.parentNode.tagName)
+      if (e.target.tagName === 'IMG') {
+        let removeItem = e.target.parentNode
+        removeItem.remove()
+      }
+      // removeItem.parentNode.removeChild(removeItem)
+    })
 
   </script>
 </html>
